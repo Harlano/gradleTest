@@ -1,0 +1,12 @@
+task hello{
+    doLast{
+        print 'helo,'
+    }
+}
+
+
+task world(dependsOn:hello){
+    doLast{
+        println ' world'
+    }
+}
